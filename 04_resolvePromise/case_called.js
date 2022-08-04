@@ -1,7 +1,9 @@
 const Promise = require('./promise_resolvePromise')
+// const Promise = require('./promise_no_pending_limit')
 // resolve 之后 reject
 const p = new Promise((resolve, reject) => {
     resolve('100')
+    // reject('200')
 })
 
 let p2 = p.then(data => {
