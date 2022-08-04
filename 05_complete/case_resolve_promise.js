@@ -1,4 +1,4 @@
-const Promise = require('../04_resolvePromise/promise_resolvePromise')
+const Promise = require('./promise_complete')
 
 let p = new Promise((resolve, reject) => {
     resolve(new Promise((res, rej) => {

@@ -1,5 +1,5 @@
 // 返回自身
-const Promise = require('./implement_promise')
+const Promise = require('./promise_resolvePromise')
 
 let p = new Promise((resolve, reject) => {
   resolve('success')

@@ -1,3 +1,4 @@
+const Promise = require('./promise_complete')
 
 function wrap(promise){
   let abort;
