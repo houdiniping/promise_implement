@@ -22,7 +22,7 @@ function resolvePromise(promise2, x, resolve, reject){
           reject(r)
         })
       } else {
-        // 是对象或函数 { a: 1 } function(){}
+        // 是对象或函数 { a: 1 } 且不是 thenable
         // 为啥这里不控制
         resolve(x)
       }

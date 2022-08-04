@@ -1,5 +1,5 @@
 // 返回自身
-// then 的回调函数返回自身，因为返回 Promise 会进行递归解析，因此不能返回自身
+// then 的回调函数返回自身，新 Promise 永远不会被 resolve 或 reject
 const Promise = require('./promise_resolvePromise')
 
 let p = new Promise((resolve, reject) => {
