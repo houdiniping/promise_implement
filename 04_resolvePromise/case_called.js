@@ -41,5 +41,3 @@ p3.then(data => {
 }, err => {
   console.log('err', err)
 })
-
- */
