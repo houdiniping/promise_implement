@@ -6,10 +6,10 @@ let p = new Promise((resolve, reject) => {
   resolve('success')
 })
 
+debugger;
 let p2 = p.then(data => {
   return p2
 })
-
 p2.then(data => {
   console.log('data', data)
 }, err => console.log('err', err))

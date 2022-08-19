@@ -120,7 +120,7 @@ class Promise {
           setTimeout(() => {
             try {
               let x = onRejected(this.reason)
-              resolvePromise(promise2, x, resolve, reject)
+              resolvePromise(promise2, x, resolve, reject) // resolve(x)
             } catch (error) {
               reject(error)
             }

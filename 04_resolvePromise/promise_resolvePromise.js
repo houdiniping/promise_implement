@@ -3,7 +3,6 @@ function resolvePromise(promise2, x, resolve, reject){
   // If promise and x refer to the same object, reject promise with a TypeError as the reason.
   // [TypeError: Chain cycle detected for promsie #<Promise>]
   if(promise2 === x) return  reject(new TypeError('Chain cycle detected for promsie #<Promise>'))
-
   let called = false; // 防止其它人的 Promise 没有做状态屏蔽
   if((typeof x === 'object' && x !== null) || typeof x === 'function'){
     // x 是第二个 promise then 函数里面函数的返回值
